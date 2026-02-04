@@ -3,62 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS (compiled from SCSS) -->
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
     <section>
-        <div class="container">
-            <div class="">
-                <div>
-                    <!-- Heading -->
-                    <div>
-                        <h3>
-                            The Logic Calculator
-                        </h3>
-                    </div>
+        <div class="main">
+            <!-- Heading -->
+            <div>
+                <h3>
+                    The Logic Calculator
+                </h3>
+            </div>
+
+            <div class="main_box">
+                <div class="calculator">
 
                     <!-- calculation screen -->
-                    <div>
+                    <div class="input_screen">
                         <input name="" id="">
                     </div>
 
                     <!-- Calculator Buttons -->
-                    <div>
-                        <div>
+                    <div class="button_box">
+                        <div class="button_row">
                             <span>AC</span>
-                            <span>Delete</span>
+                            <span>Del</span>
                             <span>%</span>
-                            <span>/</span>
+                            <span class="operator">/</span>
                         </div>
-                        <div>
+                        <div class="button_row">
                             <span>7</span>
                             <span>8</span>
                             <span>9</span>
-                            <span>x</span>
+                            <span class="operator">x</span>
                         </div>
-                        <div>
+                        <div class="button_row">
                             <span>4</span>
                             <span>5</span>
                             <span>6</span>
-                            <span>-</span>
+                            <span class="operator">-</span>
                         </div>
-                        <div>
+                        <div class="button_row">
                             <span>1</span>
                             <span>2</span>
                             <span>3</span>
-                            <span>+</span>
+                            <span class="operator">+</span>
                         </div>
-                        <div>
+                        <div class="button_row">
                             <span>.</span>
                             <span>0</span>
                             <span>()</span>
-                            <span>=</span>
+                            <span class="operator eqal">=</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Log Screen -->
-                <div>
+                <div class="history">
                     <div>
                         <h3>History</h3>
                         <span>icon</span>
@@ -70,5 +73,8 @@
              </div>
         </div>
     </section>
+
+    <!-- JS -->
+    <script src="index.js"></script>
 </body>
 </html>
