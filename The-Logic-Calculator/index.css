@@ -1,22 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 section {
+  height: 100vh;
   background: #4f46e5;
+  overflow: hidden;
 }
 section .main {
-  background: #4f46e5;
-  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: baseline;
+  gap: 40px;
+  padding-top: 90px;
 }
 section .main div h3 {
   font-family: "Courier New", Courier, monospace;
-  font-size: 28px;
+  font-size: 46px;
   font-weight: 800;
 }
 section .main .main_box {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 90px;
 }
 section .main .main_box .calculator {
   background: #e3e3e3;
@@ -25,16 +33,24 @@ section .main .main_box .calculator {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 10px 10px;
 }
-section .main .main_box .calculator .input_screen {
-  padding: 40px 0px 10px 0px;
-}
-section .main .main_box .calculator .input_screen input {
+section .main .main_box .calculator .cal_screen #cal_input {
+  width: -webkit-fill-available;
+  height: 50px;
+  background: #FFF;
+  color: #333;
+  font-size: 20px;
+  text-align: right;
+  padding: 0 10px;
   border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
 }
 section .main .main_box .calculator .button_box {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 15px;
 }
 section .main .main_box .calculator .button_box .button_row {
   display: flex;
@@ -42,20 +58,23 @@ section .main .main_box .calculator .button_box .button_row {
   align-items: center;
   gap: 10px;
 }
-section .main .main_box .calculator .button_box .button_row span {
+section .main .main_box .calculator .button_box .button_row span, section .main .main_box .calculator .button_box .button_row button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 8px;
+  padding: 6px 10px;
   border-radius: 8px;
-  width: 25px;
-  height: 23px;
+  width: 60px;
+  height: 50px;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: 1px solid #455d7a;
   cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 36px;
+  font-weight: bolder;
 }
-section .main .main_box .calculator .button_box .button_row span:hover {
+section .main .main_box .calculator .button_box .button_row span:hover, section .main .main_box .calculator .button_box .button_row button:hover {
   transition: all;
   transition-duration: 200;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -67,4 +86,8 @@ section .main .main_box .calculator .button_box .button_row .operator {
 section .main .main_box .calculator .button_box .button_row .eqal {
   background: #f95959;
   color: #FFF;
+}
+section .main .main_box .history div h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 28px;
 }/*# sourceMappingURL=index.css.map */
