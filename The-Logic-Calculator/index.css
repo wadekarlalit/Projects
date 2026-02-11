@@ -58,14 +58,14 @@ section .main .main_box .calculator .button_box .button_row {
   align-items: center;
   gap: 10px;
 }
-section .main .main_box .calculator .button_box .button_row span, section .main .main_box .calculator .button_box .button_row button {
+section .main .main_box .calculator .button_box .button_row button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 6px 10px;
   border-radius: 8px;
-  width: 60px;
-  height: 50px;
+  width: 80px;
+  height: 70px;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: 1px solid #455d7a;
@@ -74,7 +74,7 @@ section .main .main_box .calculator .button_box .button_row span, section .main 
   font-size: 36px;
   font-weight: bolder;
 }
-section .main .main_box .calculator .button_box .button_row span:hover, section .main .main_box .calculator .button_box .button_row button:hover {
+section .main .main_box .calculator .button_box .button_row button:hover {
   transition: all;
   transition-duration: 200;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
