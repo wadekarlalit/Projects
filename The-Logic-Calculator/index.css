@@ -35,16 +35,21 @@ section .main .main_box .calculator {
 }
 section .main .main_box .calculator .cal_screen #cal_input {
   width: -webkit-fill-available;
-  height: 50px;
+  height: 70px;
   background: #FFF;
   color: #333;
-  font-size: 20px;
-  text-align: right;
+  font-size: 26px;
   padding: 0 10px;
   border: none;
   border-radius: 8px;
   outline: none;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+  text-align: right;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+section .main .main_box .calculator .cal_screen #cal_input::-webkit-scrollbar {
+  display: none;
 }
 section .main .main_box .calculator .button_box {
   display: flex;
@@ -86,8 +91,46 @@ section .main .main_box .calculator .button_box .button_row .operator {
 section .main .main_box .calculator .button_box .button_row .eqal {
   background: #f95959;
   color: #FFF;
+  width: 170px;
 }
-section .main .main_box .history div h3 {
+section .main .main_box .history {
+  width: 300px;
+  height: 475px;
+  overflow: scroll;
+  background: #e3e3e3;
+  border: 1px solid #233142;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+section .main .main_box .history .history_heading {
+  text-align: center;
+}
+section .main .main_box .history .history_heading h3 {
   font-family: "Courier New", Courier, monospace;
   font-size: 28px;
+}
+section .main .main_box .history .history_hr {
+  background: #f95959;
+  height: 2px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+section .main .main_box .history .history_list div {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 5px 0;
+  word-break: break-all;
+  white-space: break-spaces;
+}
+section .main .main_box .history::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS (compiled from SCSS) -->
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Logic Calculator</title>
 </head>
+
 <body>
     <section>
         <div class="main">
             <!-- Heading -->
             <div>
                 <h3>
-                    The Logic Calculator
+                    Logic Calculator
                 </h3>
             </div>
 
@@ -22,7 +24,7 @@
 
                     <!-- calculation screen -->
                     <div class="cal_screen">
-                        <input type="text" id="cal_input" value="Calculator" />
+                        <input type="text" id="cal_input" value="0" />
                     </div>
 
                     <!-- Calculator Buttons -->
@@ -52,9 +54,8 @@
                             <button class="operator" value="+">+</button>
                         </div>
                         <div class="button_row">
-                            <button>.</button>
+                            <button class="dot">.</button>
                             <button id="myNumber" class="number" value="0">0</button>
-                            <button>()</button>
                             <button id="equals" class="eqal" value="=">=</button>
                         </div>
                     </div>
@@ -62,19 +63,18 @@
 
                 <!-- Log Screen -->
                 <div class="history">
-                    <div>
+                    <div class="history_heading">
                         <h3>History</h3>
-                        <span>icon</span>
                     </div>
-                    <div>
-                        "8 + 8 = 16"
-                    </div>
+                    <hr class="history_hr">
+                    <div id="historyList" class="history_list"></div>
                 </div>
-             </div>
+            </div>
         </div>
     </section>
 
     <!-- JS -->
     <script src="index.js"></script>
 </body>
+
 </html>
