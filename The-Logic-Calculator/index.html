@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS (compiled from SCSS) -->
+    <link rel="stylesheet" href="index.css">
+    <title>Logic Calculator</title>
 </head>
+
 <body>
     <section>
-        <div class="container">
-            <div class="">
-                <div>
-                    <!-- Heading -->
-                    <div>
-                        <h3>
-                            The Logic Calculator
-                        </h3>
-                    </div>
+        <div class="main">
+            <!-- Heading -->
+            <div>
+                <h3>
+                    Logic Calculator
+                </h3>
+            </div>
+
+            <div class="main_box">
+                <div class="calculator">
 
                     <!-- calculation screen -->
-                    <div>
-                        <input name="" id="">
+                    <div class="cal_screen">
+                        <input type="text" id="cal_input" value="0" />
                     </div>
 
                     <!-- Calculator Buttons -->
-                    <div>
-                        <div>
-                            <span>AC</span>
-                            <span>Delete</span>
-                            <span>%</span>
-                            <span>/</span>
+                    <div class="button_box">
+                        <div class="button_row">
+                            <button id="ac">AC</button>
+                            <button id="del">Del</button>
+                            <button class="operator" value="%">%</button>
+                            <button class="operator" value="/">/</button>
                         </div>
-                        <div>
-                            <span>7</span>
-                            <span>8</span>
-                            <span>9</span>
-                            <span>x</span>
+                        <div class="button_row">
+                            <button class="number" value="7">7</button>
+                            <button class="number" value="8">8</button>
+                            <button class="number" value="9">9</button>
+                            <button class="operator" value="*">x</button>
                         </div>
-                        <div>
-                            <span>4</span>
-                            <span>5</span>
-                            <span>6</span>
-                            <span>-</span>
+                        <div class="button_row">
+                            <button class="number" value="4">4</button>
+                            <button class="number" value="5">5</button>
+                            <button class="number" value="6">6</button>
+                            <button class="operator" value="-">-</button>
                         </div>
-                        <div>
-                            <span>1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>+</span>
+                        <div class="button_row">
+                            <button class="number" value="1">1</button>
+                            <button class="number" value="2">2</button>
+                            <button class="number" value="3">3</button>
+                            <button class="operator" value="+">+</button>
                         </div>
-                        <div>
-                            <span>.</span>
-                            <span>0</span>
-                            <span>()</span>
-                            <span>=</span>
+                        <div class="button_row">
+                            <button class="dot">.</button>
+                            <button id="myNumber" class="number" value="0">0</button>
+                            <button id="equals" class="eqal" value="=">=</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Log Screen -->
-                <div>
-                    <div>
+                <div class="history">
+                    <div class="history_heading">
                         <h3>History</h3>
-                        <span>icon</span>
                     </div>
-                    <div>
-                        "8 + 8 = 16"
-                    </div>
+                    <hr class="history_hr">
+                    <div id="historyList" class="history_list"></div>
                 </div>
-             </div>
+            </div>
         </div>
     </section>
+
+    <!-- JS -->
+    <script src="index.js"></script>
 </body>
+
 </html>
