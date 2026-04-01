@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switcher</title>
+    <style>
+        body {
+            background: #a67be0;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px;
+            color: 000;
+            /* color: cadetblue; */
+            font-weight: 800;
+
+        }
+        .colorBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .btnColor {
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 20px;
+            color: #FFF;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <h1> Color Switcher </h1>
+    <div class="colorBox">
+        <button class="btnColor" id="gray" style="background-color: #b5c6e0;"> Gray </button>
+        <button class="btnColor" id="blue" style="background-color: #103783;"> blue </button>
+        <button class="btnColor" id="orange" style="background-color: #f9b16e;"> orange </button>
+        <button class="btnColor" id="yellow" style="background-color: #fbd07c;"> yellow </button>
+        <button class="btnColor" id="pink" style="background-color: #f6d5f7;"> Pink </button>
+        <button class="btnColor" id="purple" style="background-color: #42047e;"> purple </button>
+        <button class="btnColor" id="red" style="background-color: #f1515e;"> red </button>
+        <button class="btnColor" id="green" style="background-color: #5cb270;"> green </button>
+        <button class="btnColor" id="darkBlue" style="background-color: #243748;"> darkBlue </button>
+        <button class="btnColor" id="darkBlue1" style="background-color: #a67be0;"> default </button>
+    </div>
+</body>
+<script>
+    const button = document.querySelectorAll('.btnColor');
+    const body = document.querySelector('body');
+    console.log(body);
+
+    button.forEach( (btn) => {
+        // console.log(btn);
+        btn.addEventListener('click', (e) => {
+            // console.log(e.target.id);
+            // console.log(e.target);
+            switch (e.target.id) {
+                case "gray":
+                    body.style.backgroundColor = "#b5c6e0"
+                    break;
+                case "blue":
+                    body.style.background = "#103783"
+                    break;
+                case "orange":
+                    body.style.background = "#f9b16e"
+                    break;
+                case "yellow":
+                    body.style.background = "#fbd07c"
+                    break;
+                case "pink":
+                    body.style.background = "#f6d5f7"
+                    break;
+                case "purple":
+                    body.style.background = "#42047e"
+                    break;
+                case "red":
+                    body.style.background = "#f1515e"
+                    break;
+                case "green":
+                    body.style.background = "#5cb270"
+                    break;
+                case "darkBlue":
+                    body.style.background = "#243748"
+                    break;
+            
+                default:
+                    console.log("default");
+                    body.style.background = "#a67be0"
+                    break;
+            }
+        })
+    })
+</script>
+</html>
