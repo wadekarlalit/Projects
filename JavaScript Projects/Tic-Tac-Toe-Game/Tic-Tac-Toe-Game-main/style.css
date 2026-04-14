@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bg1.jpg);
+  background-size: cover;
+}
+
+.gameContainor {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  justify-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 125px);
+  grid-template-rows: repeat(3, 132px);
+  position: relative;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(255, 0, 140);
+  place-items: end;
+}
+.box0 {
+  border-top: 0px;
+  border-left: 0px;
+}
+.box1 {
+  border-top: 0px;
+}
+.box2 {
+  border-top: 0px;
+  border-right: 0px;
+}
+.box3 {
+  border-left: 0px;
+}
+.box5 {
+  border-right: 0px;
+}
+.box6 {
+  border-bottom: 0px;
+  border-left: 0px;
+}
+.box7 {
+  border-bottom: 0px;
+}
+.box8 {
+  border-bottom: 0px;
+  border-right: 0px;
+}
+.boxtext {
+  text-align: center;
+  color: aliceblue;
+  font: caption;
+  font-size: 127px;
+  font-family: "Delicious Handrawn", "cursive";
+}
+
+.box:hover {
+  background-color: blueviolet;
+}
+
+.gameInfo {
+  margin-left: 55px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Delicious Handrawn", "cursive";
+  color: #fcb045;
+}
+
+.info {
+  font-size: 30px;
+  font-family: "Delicious Handrawn", "cursive";
+  color: #fd1d1d;
+  margin-top: 10px;
+}
+
+.btn {
+  font-size: 30px;
+  font-family: "Delicious Handrawn", "cursive";
+  color: aliceblue;
+  background-image: linear-gradient(
+    to right,
+    #833ab4 0%,
+    #fd1d1d 51%,
+    #fcb045 100%
+  );
+  border-radius: 21px;
+  border-style: none;
+  width: 120px;
+  height: 47px;
+  margin-top: 27px;
+  transition: 0.9s;
+  background-size: 200% auto;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+.img {
+  background-image: url(excited.gif);
+  width: 317px;
+  height: 283px;
+}
+
+.line {
+  opacity: 0.7;
+  z-index: 1;
+  height: 152px;
+  width: 0px;
+  position: absolute;
+  transition: width 1s ease-in-out;
+  background-image: url(blue-line-removebg-preview.png);
+}
