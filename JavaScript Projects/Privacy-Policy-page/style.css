@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400&display=swap");
+
+.logo_div1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* .logo_dv2{
+    margin-top: 10px;
+    display: flex;
+} */
+
+.logo {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.heading {
+  color: #6b5dd3;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.sub_heading {
+  color: #000000;
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin: 40px 0px 10px 110px;
+}
+
+.para {
+  color: #000000;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  margin: 10px 110px 10px 125px;
+  text-align: justify;
+}
+
+.para1 {
+  color: #000000;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  margin: 10px 110px 10px 150px;
+  text-align: justify;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .heading {
+      font-size: 25px;
+    }
+
+.sub_heading {
+  margin: 40px 30px 10px 30px;
+}
+
+.para {
+  margin: 10px 30px 10px 30px;
+}
+
+.para1 {
+  margin: 10px 55px 10px 55px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .heading {
+      font-size: 29px;
+    }
+
+.sub_heading {
+  margin: 40px 5px 10px 50px;
+}
+
+.para {
+  margin: 10px 50px 10px 50px;
+}
+
+.para1 {
+  margin: 10px 75px 10px 75px;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .heading {
+      font-size: 33px;
+    }
+
+.sub_heading {
+  margin: 40px 70px 10px 70px;
+}
+
+.para {
+  margin: 10px 70px 10px 70px;
+}
+
+.para1 {
+  margin: 10px 95px 10px 95px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .heading {
+      font-size: 37px;
+    }
+
+.sub_heading {
+  margin: 40px 90px 10px 90px;
+}
+
+.para {
+  margin: 10px 90px 10px 90px;
+}
+
+.para1 {
+  margin: 10px 115px 10px 115px;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .heading {
+      font-size: 42px;
+    }
+
+  .sub_heading {
+      margin: 40px 110px 10px 110px;
+    }
+  
+    .para {
+      margin: 10px 110px 10px 110px;
+    }
+
+    .para1 {
+      margin: 10px 135px 10px 135px;
+    }
+  }
