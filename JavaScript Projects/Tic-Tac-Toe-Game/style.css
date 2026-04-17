@@ -107,10 +107,29 @@ h1 {
   margin-top: 27px;
   transition: 0.9s;
   background-size: 200% auto;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-position: right center;
+}
+
+#selectplayer {
+  display: flex;
+  gap: 24px;
+  margin-top: -15px;
+}
+#selectplayerX, #selectplayer0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  background-size: 500% auto;
+  padding: 0px 10px 10px 10px;
+  background-image: none;
+  background-color: #6a4584;
 }
 
 .img {

@@ -1,14 +1,28 @@
-// let a = "Tic Tac Toe";
-// console.log(a)
+
 
 let music = new Audio("music.mp3");
 let audioTurn = new Audio("ting.mp3");
 let gameover = new Audio("gameover.mp3");
-let turn = "0";
+let turn = "x";
 let isGameover = false;
+let count = 0;
+let selectplayer = document.getElementById("selectplayer");
+let playerX = document.getElementById("selectplayerX");
+let player0 = document.getElementById("selectplayer0");
+
+playerX.addEventListener('click', ()=>{
+  turn = "x"
+  selectplayer.style.display = 'none';
+});
+
+player0.addEventListener('click', ()=>{
+  turn = "o";
+  selectplayer.style.display = 'none';
+});
 
 const changeTurn = () => {
-  return turn === "x" ? "0" : "x";
+  selectplayer.style.display = 'none';
+  return turn === "x" ? "o" : "x";
 };
 
 const checkWin = () => {
@@ -30,43 +44,56 @@ const checkWin = () => {
       (boxtext[e[0]].innerText !== "")
     ){
       document.querySelector(".info").innerText =
-        boxtext[e[0]].innerText + " is Won";
+        `🎉 Player ${boxtext[e[0]].innerText.toUpperCase()} WINNER 🎉`;
     isGameover = true;
     document.querySelector('.line').style.width = '440px';
     document.querySelector('.line').style.transform  = `translate(${e[3]}px, ${e[4]}px) rotate(${e[5]}deg)`;
-    // document.querySelector('.line').style.transform  = `translate(-44px, 58px) rotate(0deg)`;
+    console.log("game over")
+    document.querySelectorAll(".box").forEach(box => {
+      box.style.pointerEvents = "none"; // disable
+      box.style.opacity = "0.5"; // disable
+    });
     gameover.play();
     setTimeout(function() {
       music.play()
       document.getElementById('won-img').classList.add('img');
-    }, 3000)
-    
-
+    }, 1000)
   }
 });
 };
 
 // Main Logic
-// music.play();
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach((element) => {
   let boxtext = element.querySelector(".boxtext");
 
   element.addEventListener("click", () => {
+    
     if (boxtext.innerText === "") {
       boxtext.innerText = turn;
       turn = changeTurn();
       audioTurn.play();
       checkWin();
-      
-
+      count++;
+      console.log("case1")
+    } else {
+      console.log("case2")
     }
-       if(!isGameover) {
-        document.getElementsByClassName("info")[0].innerText =
-          "Turn For " + turn;
-          
-
-      }
+    if(!isGameover) {
+    document.getElementsByClassName("info")[0].innerText =
+      `Turn For ${turn.toUpperCase()}`;
+    }
+    if(count === 9){
+      console.log("count1", count)
+      document.querySelectorAll(".box").forEach(box => {
+        box.style.pointerEvents = "none"; // disable
+        box.style.opacity = "0.5"; // disable
+      });
+      isGameover = true;
+      gameover.play();
+      document.getElementsByClassName("info")[0].innerText =
+      "🤝 Match Draw! Try Again 🔄";
+    }
   });
 });
 
