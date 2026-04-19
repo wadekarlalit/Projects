@@ -9,6 +9,11 @@
 body {
   background-image: url(bg1.jpg);
   background-size: cover;
+
+  @media (max-width: 600px) {
+    background-size: 100% 100%;
+    height: 100vh;
+  }
 }
 
 .gameContainor {
@@ -16,6 +21,11 @@ body {
   justify-content: center;
   margin-top: 120px;
   justify-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+     margin-top: 40px;
+  }
 }
 
 .container {
@@ -23,6 +33,13 @@ body {
   grid-template-columns: repeat(3, 125px);
   grid-template-rows: repeat(3, 132px);
   position: relative;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(3, 114px);
+    grid-template-rows: repeat(3, 115px);
+    justify-content: center;
+    margin-top: 50px;
+  }
 }
 
 .box {
@@ -75,12 +92,28 @@ body {
 .gameInfo {
   margin-left: 55px;
   align-items: center;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+  }
+}
+
+.gameInfo_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   font-size: 50px;
   font-family: "Delicious Handrawn", "cursive";
   color: #fcb045;
+
+  @media (max-width: 600px) {
+    font-size: 28px;
+    text-align: center;
+  }
 }
 
 .info {
@@ -88,6 +121,11 @@ h1 {
   font-family: "Delicious Handrawn", "cursive";
   color: #fd1d1d;
   margin-top: 10px;
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+    text-align: center;
+  }
 }
 
 .btn {
@@ -108,6 +146,12 @@ h1 {
   transition: 0.9s;
   background-size: 200% auto;
   cursor: pointer;
+
+  @media (max-width: 600px) {
+    font-size: 28px;
+    width: 130px;
+    height: 40px;
+  }
 }
 
 .btn:hover {
@@ -118,6 +162,10 @@ h1 {
   display: flex;
   gap: 24px;
   margin-top: -15px;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 }
 #selectplayerX, #selectplayer0 {
   display: flex;
@@ -130,6 +178,12 @@ h1 {
   padding: 0px 10px 10px 10px;
   background-image: none;
   background-color: #6a4584;
+
+  @media (max-width: 600px) {
+    width: 80px;
+    height: 40px;
+    font-size: 28px;
+  }
 }
 
 .img {
