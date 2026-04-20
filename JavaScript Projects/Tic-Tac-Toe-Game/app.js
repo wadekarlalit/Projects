@@ -9,6 +9,7 @@ let count = 0;
 let selectplayer = document.getElementById("selectplayer");
 let playerX = document.getElementById("selectplayerX");
 let player0 = document.getElementById("selectplayer0");
+const isMobile = window.matchMedia("(max-width: 600px)").matches;
 
 playerX.addEventListener('click', ()=>{
   turn = "x"
@@ -27,15 +28,25 @@ const changeTurn = () => {
 
 const checkWin = () => {
   let boxtext = document.getElementsByClassName("boxtext");
+  // let wins = [
+  //   [0, 1, 2, -48, -92, 0],
+  //   [3, 4, 5, -44, 58, 0],
+  //   [6, 7, 8, -48, 176, 0],
+  //   [0, 3, 6, -88, 83, 90],
+  //   [1, 4, 7, 42, 107, 90],
+  //   [2, 5, 8, 174, 97, 90],
+  //   [0, 4, 8, -1, 47, 47],
+  //   [2, 4, 6, -89, 82, -49],
+  // ];
   let wins = [
-    [0, 1, 2, -48, -92, 0],
-    [3, 4, 5, -44, 58, 0],
-    [6, 7, 8, -48, 176, 0],
-    [0, 3, 6, -88, 83, 90],
-    [1, 4, 7, 42, 107, 90],
-    [2, 5, 8, 174, 97, 90],
-    [0, 4, 8, -1, 47, 47],
-    [2, 4, 6, -89, 82, -49],
+    isMobile ? [0, 1, 2, -48, -92, 0] : [0, 1, 2, -48, -68, 0],
+    isMobile ? [3, 4, 5, -38, 30, 0] : [3, 4, 5, -44, 58, 0],
+    isMobile ? [6, 7, 8, -48, 150, 0]: [6, 7, 8, -48, 202, 0],
+    isMobile ? [0, 3, 6, -48, 83, 90] : [0, 3, 6, -88, 83, 90],
+    isMobile ? [1, 4, 7, 67, 65, 90] : [1, 4, 7, 42, 107, 90],
+    isMobile ? [2, 5, 8, 174, 97, 90] : [2, 5, 8, 164, 97, 90],
+    isMobile ? [0, 4, 8, 38, 43, 47] : [0, 4, 8, -10, 64, 47],
+    isMobile ? [2, 4, 6, -89, 82, -49] : [2, 4, 6, -89, 82, -49],
   ];
   wins.forEach((e) => {
     if (
@@ -47,6 +58,7 @@ const checkWin = () => {
         `🎉 Player ${boxtext[e[0]].innerText.toUpperCase()} WINNER 🎉`;
     isGameover = true;
     document.querySelector('.line').style.width = '440px';
+    // document.querySelector('.line').style.transform  = `translate(${e[3]}px, ${e[4]}px) rotate(${e[5]}deg)`;
     document.querySelector('.line').style.transform  = `translate(${e[3]}px, ${e[4]}px) rotate(${e[5]}deg)`;
     console.log("game over")
     document.querySelectorAll(".box").forEach(box => {
