@@ -398,7 +398,7 @@ p {
     /* to avoid visual glitchs */
   }
 
-  .mobileCard > .mobileCard_box {
+  .mobileCard>.mobileCard_box {
     --_p: calc(-1*var(--g));
     grid-area: 1/1;
     width: 350px;
@@ -408,21 +408,21 @@ p {
     transition: .4s .1s;
   }
 
-  .mobileCard > .mobileCard_box:first-child {
+  .mobileCard>.mobileCard_box:first-child {
     clip-path: polygon(0 0, calc(100% + var(--_p)) 0, 0 calc(100% + var(--_p)))
   }
 
-  .mobileCard > .mobileCard_box:last-child {
+  .mobileCard>.mobileCard_box:last-child {
     clip-path: polygon(100% 100%, 100% calc(0% - var(--_p)), calc(0% - var(--_p)) 100%)
   }
 
-  .mobileCard:hover > .mobileCard_box:last-child,
-  .mobileCard:hover > .mobileCard_box:first-child:hover {
+  .mobileCard:hover>.mobileCard_box:last-child,
+  .mobileCard:hover>.mobileCard_box:first-child:hover {
     --_p: calc(50% - var(--g));
   }
 
-  .mobileCard:hover > .mobileCard_box:first-child,
-  .mobileCard:hover > .mobileCard_box:first-child:hover + .mobileCard_box {
+  .mobileCard:hover>.mobileCard_box:first-child,
+  .mobileCard:hover>.mobileCard_box:first-child:hover+.mobileCard_box {
     --_p: calc(-50% - var(--g));
   }
 }
@@ -431,7 +431,9 @@ p {
   display: none;
 
   @media (max-width: 600px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
