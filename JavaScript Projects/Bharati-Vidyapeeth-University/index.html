@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online MBA | Bharati Vidyapeeth University</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- ==== HERO SECTION START HERE ===== -->
+    <section class="hero">
+
+        <!-- Background Image -->
+        <div class="hero__background">
+            <img src="/assets/hero-background.png" alt="University Background">
+        </div>
+
+        <div class="container">
+            <div class="hero__wrapper">
+
+                <!-- LEFT CONTENT -->
+                <section class="hero__content">
+                    <p class="hero__subtitle">
+                        Online MBA from
+                    </p>
+                    <h1 class="hero__title">
+                        Bharati Vidyapeeth<br>
+                        University
+                    </h1>
+                    <h2 class="hero__heading">
+                        for Working Professionals
+                    </h2>
+
+                    <!-- Highlights -->
+                    <ul class="hero__highlights">
+                        <li class="hero__highlight">
+                            <span class="hero__highlight-icon">
+
+                                <!-- Placeholder Icon -->
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </span>
+
+                            <p> Duration: 24 Months </p>
+                        </li>
+
+                        <li class="hero__highlight">
+                            <span class="hero__highlight-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+
+                                    <rect x="4" y="5" width="16" height="14" rx="1" stroke="currentColor" stroke-width="2" />
+                                    <line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </span>
+                            <p> Courses: 38 + 1 Summer Internship </p>
+                        </li>
+
+                        <li class="hero__highlight">
+                            <span class="hero__highlight-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                                    <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 3C14.5 5.5 16 8.7 16 12C16 15.3 14.5 18.5 12 21" stroke="currentColor" stroke-width="2" />
+                                    <path d="M12 3C9.5 5.5 8 8.7 8 12C8 15.3 9.5 18.5 12 21" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </span>
+                            <p> Mode: 100% Online, Learn Anytime, Anywhere </p>
+                        </li>
+                    </ul>
+
+                    <!-- Accreditation -->
+                    <section class="hero__accreditation">
+                        <p class="hero__accreditation-title">
+                            ACCREDITED &amp; RECOGNIZED BY
+                        </p>
+
+                        <div class="hero__logos">
+                            <img src="/assets/UGC-logo.png" alt="Recognition Logo">
+                            <img src="/assets/NAAC-logo.png" alt="Recognition Logo">
+                            <img src="/assets/AICTE-logo.png" alt="Recognition Logo">
+                            <img src="/assets/nirf_update.png" alt="Recognition Logo">
+                        </div>
+                    </section>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero__buttons">
+                        <button class="hero__button hero__button--primary" type="button"> REGISTER NOW </button>
+                        <button class="hero__button hero__button--secondary" type="button"> DOWNLOAD BROCHURE </button>
+                    </div>
+
+                    <figure class="hero__image">
+                        <img src="/assets/student-hero.png" alt="Student holding laptop">
+                    </figure>
+                </section>
+
+                <!-- RIGHT FORM -->
+                <aside class="hero__form-card" aria-labelledby="admission-title">
+                    <h2 class="hero__form-title" id="admission-title"> Admission Open </h2>
+                    <p class="hero__form-subtitle"> Register to begin your application. </p>
+
+                    <form class="hero__form" id="registrationForm" novalidate>
+
+                        <!-- Row 1 -->
+                        <div class="hero__form-row">
+                            <div class="hero__field">
+
+                                <label class="sr-only" for="fullName"> Full Name </label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Full Name*" required>
+                            </div>
+
+                            <div class="hero__field">
+                                <label class="sr-only" for="email"> Email Address </label>
+                                <input type="email" id="email" name="email" placeholder="Email Address*" required>
+                            </div>
+
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="hero__form-row">
+                            <div class="hero__field hero__field--phone">
+                                <span class="hero__country-code"> +91 </span>
+                                <label class="sr-only" for="mobile"> Phone Number </label>
+                                <input type="tel" id="mobile" name="mobile" placeholder="Phone Number*" maxlength="10" required>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="hero__form-row">
+                            <div class="hero__field educationaLevel">
+                                <span class="educationaLevelArrow"></span>
+                                <label class="sr-only" for="education">
+                                    Educational Level
+                                </label>
+
+                                <select id="education" name="education" required>
+                                    <option value=""> Educational Level </option>
+                                    <option> Graduate </option>
+                                    <option>Post Graduate </option>
+                                    <option> Diploma </option>
+                                </select>
+                            </div>
+
+                            <div class="hero__field educationaLevel">
+                                <span class="educationaLevelArrow"></span>
+                                <label class="sr-only" for="city"> City </label>
+
+                                <select id="city" name="city" required>
+                                    <option value=""> City </option>
+                                    <option> Mumbai </option>
+                                    <option> Pune </option>
+                                    <option> Delhi </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Captcha -->
+                        <div class="hero__captcha">
+                            <div class="hero__field hero__field--captcha">
+                                <label class="sr-only" for="captcha">
+                                    Captcha
+                                </label>
+                                <input type="text" id="captcha" name="captcha" placeholder="Captcha">
+                            </div>
+
+                            <button class="hero__captcha-refresh" type="button" aria-label="Refresh Captcha">
+                                <img src="/assets/refresh.png" alt="captcha-refresh">
+                            </button>
+
+                            <button class="hero__verify-button" type="button"> Send Verification </button>
+                        </div>
+
+                        <!-- Checkboxes -->
+                        <div class="hero__checkbox-group">
+                            <label class="hero__checkbox">
+                                <input type="checkbox" name="graduate" required>
+                                <span class="hero__checkbox-mark"></span>
+                                <span class="hero__checkbox-text"> I am a graduate with min. 50% marks* </span>
+                            </label>
+
+                            <label class="hero__checkbox">
+                                <input type="checkbox" name="terms" required>
+                                <span class="hero__checkbox-mark"></span>
+                                <span class="hero__checkbox-text"> I agree to the Terms and Conditions of this website.
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- Submit -->
+                        <button class="hero__submit" type="submit"> REGISTER </button>
+
+                        <a href="#" class="hero__resend"> Resend verification email </a>
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- ==== HERO SECTION END HERE ===== -->
+
+
+    <!-- ==== stats SECTION START HERE ===== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats__wrapper">
+                <div class="stats__content">
+                    <p class="stats__title" data-target="70000" data-suffix="+"> 0 </p>
+                    <p class="stats__subtitle">Students</p>
+                </div>
+                <div class="stats__content stats__Teachers">
+                    <p class="stats__title" data-target="1600" data-suffix="+"> 0 </p>
+                    <p class="stats__subtitle">Teachers</p>
+                </div>
+                <div class="stats__content">
+                    <p class="stats__title" data-target="60" data-suffix="+"> 0 </p>
+                    <p class="stats__subtitle">Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==== stats SECTION END HERE ===== -->
+
+
+    <!-- ==== program SECTION START HERE ===== -->
+    <section class="program">
+        <div class="container">
+            <div class="program__wrapper">
+                <div class="program__left">
+                    <p class="program__title">Bharati Vidyapeeth University Online MBA – UGC-Entitled Program</p>
+                    <p class="program__subtitle">The Bharati Vidyapeeth Online MBA 2.0 is a two-year, UGC-DEB and
+                        AICTE-recognised programme created for professionals who want to strengthen their managerial and
+                        strategic capabilities. Delivered through an advanced digital learning platform and taught by
+                        experienced faculty, the Online MBA 2.0 Bharati Vidyapeeth builds a strong foundation in core
+                        management before allowing you to choose dual specialisations in the later semesters. With a
+                        summer internship for real-world exposure, English instruction, and flexible completion
+                        timelines, the programme prepares you to face modern business challenges with confidence.</p>
+                    <button class="program__btn">Apply Now</button>
+                </div>
+                <div class="program__right">
+                    <img src="/assets/program-image.png" alt="program-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==== program SECTION END HERE ===== -->
+
+
+    <!-- ==== why choose SECTION START HERE ===== -->
+    <section class="why-choose">
+        <div class="why-choose__left">
+            <div class="why-choose__content">
+                <h2 class="why-choose__title">
+                    Why Choose Bharati
+                    Vidyapeeth University
+                    Online MBA for Career
+                    Growth?
+                </h2>
+
+                <span class="why-choose__divider"></span>
+            </div>
+        </div>
+
+        <div class="why-choose__right">
+            <div class="why-choose__content">
+                <h3 class="why-choose__heading">
+                    Learn From One of India's Most Trusted Universities
+                </h3>
+
+                <p class="why-choose__description">
+                    Bharati Vidyapeeth University Online MBA is designed for professionals
+                    who want to accelerate their careers without leaving their jobs.
+                    The programme combines academic excellence, industry-oriented
+                    curriculum, flexible online learning, experienced faculty,
+                    and recognised university credentials to prepare students
+                    for leadership roles across multiple industries.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ==== why choose SECTION END HERE ===== -->
+
+
+    <!-- ==== journey SECTION START HERE ===== -->
+    <section class="journey">
+        <div class="container">
+            <div class="journey__header">
+                <h2 class="journey__title">
+                    Explore Your Academic Journey
+                </h2>
+
+                <p class="journey__subtitle">
+                    2-Year MBA | 4 Semesters | Comprehensive Curriculum
+                </p>
+            </div>
+
+            <!-- Semester Tabs -->
+            <div class="journey__tabs">
+                <button class="journey__tab journey__tab--active">
+                    <span class="journey__tab-title">
+                        1st Semester
+                    </span>
+
+                    <span class="journey__tab-count">
+                        31
+                    </span>
+                </button>
+
+                <button class="journey__tab">
+                    <span class="journey__tab-title">
+                        2nd Semester
+                    </span>
+
+                    <span class="journey__tab-count">
+                        35
+                    </span>
+                </button>
+
+                <button class="journey__tab">
+                    <span class="journey__tab-title">
+                        3rd Semester
+                    </span>
+
+                    <span class="journey__tab-count">
+                        39
+                    </span>
+                </button>
+
+                <button class="journey__tab">
+                    <span class="journey__tab-title">
+                        4th Semester
+                    </span>
+
+                    <span class="journey__tab-count">
+                        19
+                    </span>
+                </button>
+            </div>
+
+            <!-- Content -->
+            <div class="journey__content">
+
+                <!-- Left -->
+                <div class="journey__subjects">
+                    <div class="journey__subjects-header">
+                        <span>Subject Name</span>
+                        <span>Credits</span>
+                    </div>
+
+                    <div class="journey__subjects-body">
+                        <div class="journey__subject">
+                            <span>
+                                Management Concepts &amp; Applications
+                            </span>
+
+                            <span class="journey__credit">
+                                3
+                            </span>
+                        </div>
+
+                        <div class="journey__subject">
+                            <span>
+                                Managerial Economics
+                            </span>
+
+                            <span class="journey__credit">
+                                3
+                            </span>
+                        </div>
+
+                        <div class="journey__subject">
+                            <span>
+                                Financial &amp; Management Accounting
+                            </span>
+
+                            <span class="journey__credit">
+                                4
+                            </span>
+                        </div>
+
+                        <div class="journey__subject">
+                            <span>
+                                Organizational Behaviour
+                            </span>
+
+                            <span class="journey__credit">
+                                3
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Card -->
+                <aside class="journey__electives">
+                    <h3 class="journey__card-title">
+                        Open Elective Options
+                    </h3>
+
+                    <p class="journey__card-subtitle">
+                        Semester 1 choices:
+                    </p>
+
+                    <ul class="journey__elective-list">
+                        <li class="journey__elective-item">
+                            Agriculture Business Management
+                        </li>
+
+                        <li class="journey__elective-item">
+                            Community Work – I
+                        </li>
+
+                        <li class="journey__elective-item">
+                            Current Affairs
+                        </li>
+
+                        <li class="journey__elective-item">
+                            Universal Human Values
+                        </li>
+
+                        <li class="journey__elective-item">
+                            Counseling Psychology
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Specialization Card -->
+            <section class="journey__specialization">
+                <h3 class="journey__specialization-title">
+                    Choose Your Specialization
+                </h3>
+
+                <p class="journey__specialization-subtitle">
+                    Select 2 from 14 available specializations:
+                </p>
+
+                <p class="journey__specialization-info">
+                    Total: 38 Courses + 1 Summer Internship + 124 Credits over 24 Months.
+                </p>
+
+                <div class="journey__tags">
+                    <button class="journey__tag">
+                        Marketing Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Financial Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Human Resource Management
+                    </button>
+
+                    <button class="journey__tag">
+                        International Business Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Production &amp; Operations Management
+                    </button>
+
+                    <button class="journey__tag">
+                        IT Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Agribusiness Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Retail Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Project Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Business Analytics
+                    </button>
+
+                    <button class="journey__tag">
+                        Event Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Hospitality Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Infrastructure Management
+                    </button>
+
+                    <button class="journey__tag">
+                        Sports Management
+                    </button>
+
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- ==== journey SECTION END HERE ===== -->
+
+
+    <!-- ==== career growth SECTION START HERE ===== -->
+    <section class="career-growth">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="career-growth__header">
+                <h2 class="career-growth__title">
+                    How Will This MBA Accelerate Your Career Growth?
+                </h2>
+
+                <p class="career-growth__subtitle">
+                    Students of Bharati Vidyapeeth CDOE gain access to a wide range of
+                    value-added, skill-based programs alongside their regular curriculum.
+                    These courses are designed to enhance industry-relevant competencies
+                    and support real career growth.
+                </p>
+            </div>
+
+            <!-- Technology Tags -->
+            <div class="career-growth__tags">
+                <button class="career-growth__tag career-growth__tag--filled">
+                    Data Analytics with Power BI
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--filled">
+                    Python for Data Science
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--filled">
+                    React JS
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--filled">
+                    Six Sigma
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--filled">
+                    Adv. Java
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--filled">
+                    Blockchain
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--filled">
+                    Full Stack Development
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--filled">
+                    AWS
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--outline">
+                    ChatGPT
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--outline">
+                    Big Data
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--light">
+                    Angular
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--light">
+                    Data Science
+                </button>
+
+                <button class="career-growth__tag career-growth__tag--light">
+                    Artificial Intelligence
+                </button>
+
+            </div>
+        </div>
+    </section>
+    <!-- ==== career growth SECTION END HERE ===== -->
+
+
+    <!-- ==== Who Should Enroll SECTION START HERE ===== -->
+    <section class="enroll">
+        <div class="container">
+            <div class="enroll__header">
+                <h2 class="enroll__title">
+                    Who Should Enroll?
+                </h2>
+
+                <p class="enroll__subtitle">
+                    Admission to the programme is open to any graduate (10+2+3) from any recognized university
+                    satisfying the following conditions:
+                </p>
+            </div>
+
+            <div class="enroll__cards">
+                <article class="enroll__card">
+                    <div class="enroll__number">
+                        1
+                    </div>
+                    <p class="enroll__text">
+                        The candidate should have secured at least 50% (45% for SC/ST) in aggregate at a graduate-level
+                        university examination.
+                    </p>
+                </article>
+
+                <article class="enroll__card">
+                    <div class="enroll__number">
+                        2
+                    </div>
+                    <p class="enroll__text">
+                        The Candidate applying in the final year of a bachelor's degree may also apply. Admission of
+                        such candidates will remain provisional until submission of the final result certificates in
+                        original.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ==== Who Should Enroll SECTION END HERE ===== -->
+
+
+    <!-- ==== Our Students are Working With SECTION START HERE ===== -->
+    <section class="companies">
+        <div class="container">
+            <div class="companies__header">
+                <h2 class="companies__title">
+                    Our Students are Working With
+                </h2>
+
+                <span class="companies__divider"></span>
+            </div>
+
+            <div class="companies__grid">
+                <article class="companies__card">
+                    <p>infosys</p>
+                </article>
+
+                <article class="companies__card">
+                    <p>TCS</p>
+                </article>
+
+                <article class="companies__card">
+                    <p>Wipro</p>
+                </article>
+
+                <article class="companies__card">
+                    <p>Amazon</p>
+                </article>
+
+                <article class="companies__card">
+                    <p>Google</p>
+                </article>
+
+                <article class="companies__card">
+                    <p>Microsoft</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ==== Our Students are Working With SECTION END HERE ===== -->
+
+
+    <!-- ==== university SECTION START HERE ===== -->
+    <section class="about-university">
+        <div class="">
+            <div class="about-university__header">
+                <h2 class="about-university__title">
+                    About Bharati Vidyapeeth Deemed To Be A University, Pune
+                </h2>
+
+                <p class="about-university__description">
+                    Established in 1964 by Dr. Patangrao Kadam, Bharati Vidyapeeth is a premier multidisciplinary
+                    university committed to accessible, high-quality education. Recognized by the UGC and accredited
+                    with NAAC A++, it offers diverse programs in management, engineering, law, and health sciences.
+                    Through its Centre for Distance and Online Education (CDOE), the university provides flexible,
+                    technology-driven learning for global professionals. By merging academic rigor with industry
+                    relevance, Bharati Vidyapeeth equips students with the essential skills to thrive in a dynamic
+                    global market.
+                </p>
+
+            </div>
+
+            <!-- Statistics -->
+            <div class="about-university__stats">
+                <article class="about-university__stat">
+                    <h3 class="about-university__stat-number">
+                        60+ Years
+                    </h3>
+
+                    <span class="about-university__stat-label">
+                        LEGACY
+                    </span>
+                </article>
+
+                <article class="about-university__stat">
+                    <h3 class="about-university__stat-number">
+                        150+
+                    </h3>
+
+                    <span class="about-university__stat-label">
+                        PROGRAMS
+                    </span>
+                </article>
+
+                <article class="about-university__stat">
+                    <h3 class="about-university__stat-number">
+                        NAAC A++
+                    </h3>
+
+                    <span class="about-university__stat-label">
+                        ACCREDITATION
+                    </span>
+                </article>
+            </div>
+
+            <!-- Button -->
+            <div class="about-university__action">
+                <button class="about-university__button" type="button">
+                    <span>
+                        Explore More
+                    </span>
+
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M13 6L19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- University Image -->
+            <div class="about-university__image">
+                <img src="/assets/bharati-vidyapeeth.png" alt="Bharati Vidyapeeth Deemed To Be A University">
+            </div>
+        </div>
+    </section>
+    <!-- ==== university SECTION END HERE ===== -->
+
+
+    <!-- ==== FAQ SECTION START HERE ===== -->
+    <section class="faq">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="faq__header">
+                <h2 class="faq__title">
+                    Frequently Asked <br>
+                    Questions (FAQs)
+                </h2>
+
+                <span class="faq__divider"> </span>
+            </div>
+
+            <!-- FAQ List -->
+            <div class="faq__list" id="faqList">
+                <!-- faq data through JS will render here -->
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="faq__footer">
+                <p class="faq__footer-text">
+                    Get detailed program information, fee structure, and curriculum overview.
+                </p>
+
+                <button type="button" class="faq__button">
+                    <span class="faq__button-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V20a2 2 0 0 1-2.18 2
+                               19.86 19.86 0 0 1-8.63-3.07
+                               19.5 19.5 0 0 1-6-6
+                               A19.86 19.86 0 0 1 2.11 4.18
+                               2 2 0 0 1 4.1 2h3.09
+                               a2 2 0 0 1 2 1.72
+                               c.12.9.33 1.78.63 2.62
+                               a2 2 0 0 1-.45 2.11L8.09 9.91
+                               a16 16 0 0 0 6 6l1.46-1.28
+                               a2 2 0 0 1 2.11-.45
+                               c.84.3 1.72.51 2.62.63
+                               A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                    <span class="faq__button-text">
+                        Download Brochure
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- ==== FAQ SECTION END HERE ===== -->
+
+
+    <!-- ==== footer SECTION START HERE ===== -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Footer Links -->
+            <nav class="footer__links" id="footerLinks">
+                <!-- footer links data through JS will render here -->
+            </nav>
+
+            <!-- Divider -->
+            <div class="footer__divider"></div>
+
+            <!-- Disclaimer -->
+            <p class="footer__disclaimer">
+                Disclaimer: We act as a marketing service partner only.
+                Bharati Vidyapeeth Deemed University holds full rights
+                to request change or removal of any non-relevant content.
+                Images used are for illustrative purposes and do not directly
+                represent the respective colleges or universities.
+            </p>
+
+            <!-- Copyright -->
+            <p class="footer__copyright">
+                Copyright © 2026 School of Online Education.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- ==== footer SECTION END HERE ===== -->
+
+
+
+    <script src="./data/data.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
