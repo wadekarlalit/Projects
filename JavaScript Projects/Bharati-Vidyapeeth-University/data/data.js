@@ -1,3 +1,76 @@
+//=========== Steps Data Here =============
+const stepsData = [
+    {
+        number: "1",
+        title: "Register Yourself",
+        description: "Create your account to get started",
+        active: false
+    },
+    {
+        number: "2",
+        title: "Verify Email",
+        description: "Check your inbox for the link",
+        active: false
+    },
+    {
+        number: "3",
+        title: "Fill Application Form",
+        description: "Enter your personal details",
+        active: false
+    },
+    {
+        number: "4",
+        title: "Pay Application Fee",
+        description: "Complete secure online payment",
+        active: false
+    },
+    {
+        number: "5",
+        title: "Submit Application",
+        description: "Review and submit your form",
+        active: true
+    }
+];
+
+
+//=========== Why Choose Data Here =============
+const whyChooseData = [
+    {
+        number: "01",
+        title: "Industry-Oriented Programme"
+    },
+    {
+        number: "02",
+        title: "Practical Business Training"
+    },
+    {
+        number: "03",
+        title: "Open Discussion Forums"
+    },
+    {
+        number: "04",
+        title: "E-learning Tools"
+    },
+    {
+        number: "05",
+        title: "100% Online Learning Platform"
+    },
+    {
+        number: "06",
+        title: "Affordable Fees & Flexible Payment Options"
+    },
+    {
+        number: "07",
+        title: "Case Studies, Projects & Summer Internship"
+    },
+    {
+        number: "08",
+        title: "Live + Recorded Interactive Classes"
+    }
+];
+
+
+//=========== FAQ Data Here =============
 const faqData = [
     {
         question:
@@ -62,6 +135,7 @@ const faqData = [
 ];
 
 
+//=========== Footer Data Here =============
 const footerData = [
     {
         link: "#",

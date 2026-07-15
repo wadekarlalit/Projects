@@ -301,7 +301,7 @@ ul {
     }
 
     &__button {
-        border-radius: 18px;
+        border-radius: 10px;
         padding: 20px 5px;
         font-size: 16px;
         font-weight: 700;
@@ -311,6 +311,7 @@ ul {
         justify-content: center;
         align-items: center;
         flex: 1;
+        gap: 10px;
 
         @media(max-width:992px) {
             font-size: 14px;
@@ -348,6 +349,7 @@ ul {
 }
 
 .hero {
+
     /*===== FORM CARD =====*/
     &__form-card {
         width: 546px;
@@ -736,6 +738,7 @@ ul {
         }
     }
 }
+
 /*=============================
     STATS SECTION END HERE
 =============================*/
@@ -849,6 +852,7 @@ ul {
         }
     }
 }
+
 /*=============================
     PROGRAM SECTION END HERE
 =============================*/
@@ -926,37 +930,66 @@ ul {
         border-radius: 50px;
     }
 
-    &__heading {
-        color: var(--primary);
-        font-size: 38px;
-        font-weight: 700;
-        line-height: 1.25;
-        margin-bottom: 24px;
+    &__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
 
-        @media (max-width:1200px) {
-            font-size: 30px;
+        @media (max-width:1400px) {
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        @media (max-width:768px) {
-            font-size: 24px;
+        @media (max-width:992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width:576px) {
+            grid-template-columns: 1fr;
         }
     }
 
-    &__description {
-        color: var(--secondary);
-        font-size: 18px;
-        line-height: 1.9;
-        margin-bottom: 45px;
-
-        @media (max-width:1200px) {
-            font-size: 14px;
-        }
+    &__card {
+        background: #FFF4ED;
+        border: 1px solid #E7D6CB;
+        border-radius: 16px;
+        min-height: 180px;
+        padding: 28px 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @media (max-width:768px) {
-            font-size: 12px;
+            min-height: 160px;
+            padding: 22px 18px;
+        }
+    }
+
+    &__number {
+        display: block;
+        color: var(--primaryOrange);
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 18px;
+
+        @media (max-width:768px) {
+            font-size: 36px;
+        }
+    }
+
+    &__card-title {
+        color: var(--primary);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.35;
+
+        @media (max-width:768px) {
+            font-size: 16px;
         }
     }
 }
+
 /*=============================
     why choose SECTION END HERE
 =============================*/
@@ -1356,6 +1389,7 @@ ul {
         }
     }
 }
+
 /*=============================
     journey SECTION END HERE
 =============================*/
@@ -1712,6 +1746,7 @@ ul {
             color .3s ease;
     }
 }
+
 /*=============================
     FAQ SECTION END HERE
 =============================*/
@@ -1827,6 +1862,7 @@ ul {
         }
     }
 }
+
 /*=================================
    Career Growth Section END HERE
 ==================================*/
@@ -1957,8 +1993,184 @@ ul {
         }
     }
 }
+
 /*=================================
    Who Should Enroll Section END HERE
+==================================*/
+
+
+/*=================================
+   Steps Section START HERE
+==================================*/
+.steps {
+    background: var(--primary);
+    padding: 80px 0 90px;
+
+    @media (max-width:992px) {
+        padding: 70px 0;
+    }
+
+    @media (max-width:768px) {
+        padding: 60px 0;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 56px;
+
+        @media (max-width:768px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        color: var(--white);
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 12px;
+
+        @media (max-width:1200px) {
+            font-size: 44px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 34px;
+        }
+    }
+
+    &__subtitle {
+        color: rgba(255, 255, 255, .65);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6;
+
+        @media (max-width:768px) {
+            font-size: 14px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: nowrap;
+
+        @media (max-width:1200px) {
+            flex-wrap: wrap;
+            row-gap: 26px;
+        }
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            gap: 18px;
+        }
+    }
+
+    &__card {
+        width: 235px;
+        background: #1E294B;
+        border: 1px solid rgba(255, 255, 255, .08);
+        border-radius: 14px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        text-align: center;
+
+        @media (max-width:768px) {
+            width: 100%;
+            max-width: 340px;
+        }
+
+        &--active {
+            background: var(--primaryOrange);
+            border-color: var(--primaryOrange);
+
+            .steps__number {
+                background: var(--white);
+                color: var(--primaryOrange);
+            }
+
+            .steps__card-title,
+            .steps__card-description {
+                color: var(--white);
+            }
+        }
+
+        &:first-child {
+            background: var(--white);
+
+            .steps__card-title {
+                color: var(--primary);
+            }
+
+            .steps__card-description {
+                color: var(--secondary);
+            }
+        }
+    }
+
+    &__number {
+        width: 60px;
+        height: 60px;
+
+        border-radius: 50%;
+        background: #F97316;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: var(--white);
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    &__card-title {
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.35;
+        margin-top: 28px;
+        margin-bottom: 10px;
+    }
+
+    &__card-description {
+        color: rgba(255, 255, 255, .60);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    &__connector {
+        width: 28px;
+        height: 2px;
+        border-top: 2px dashed var(--primaryOrange);
+        flex-shrink: 0;
+
+        @media (max-width:1200px) {
+            display: none;
+        }
+    }
+
+    &__card {
+        opacity: 0;
+        transform: translateY(40px) scale(.8);
+        transition:
+            opacity .6s ease,
+            transform .6s cubic-bezier(.175, .885, .32, 1.275);
+    }
+
+    &__card--show {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+/*=================================
+   Steps Section END HERE
 ==================================*/
 
 
@@ -2200,6 +2412,7 @@ ul {
         }
     }
 }
+
 /*=================================
   university SECTION END HERE
 ==================================*/
@@ -2351,6 +2564,7 @@ ul {
         }
     }
 }
+
 /*=================================
   footer SECTION START HERE SECTION END HERE
 ==================================*/

@@ -307,7 +307,7 @@ ul {
   gap: 20px;
 }
 .hero__button {
-  border-radius: 18px;
+  border-radius: 10px;
   padding: 20px 5px;
   font-size: 16px;
   font-weight: 700;
@@ -317,6 +317,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex: 1;
+  gap: 10px;
 }
 @media (max-width: 992px) {
   .hero__button {
@@ -899,37 +900,65 @@ ul {
   background: var(--primaryOrange);
   border-radius: 50px;
 }
-.why-choose__heading {
+.why-choose__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+@media (max-width: 1400px) {
+  .why-choose__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .why-choose__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .why-choose__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.why-choose__card {
+  background: #FFF4ED;
+  border: 1px solid #E7D6CB;
+  border-radius: 16px;
+  min-height: 180px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .why-choose__card {
+    min-height: 160px;
+    padding: 22px 18px;
+  }
+}
+.why-choose__number {
+  display: block;
+  color: var(--primaryOrange);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+@media (max-width: 768px) {
+  .why-choose__number {
+    font-size: 36px;
+  }
+}
+.why-choose__card-title {
   color: var(--primary);
-  font-size: 38px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1.25;
-  margin-bottom: 24px;
-}
-@media (max-width: 1200px) {
-  .why-choose__heading {
-    font-size: 30px;
-  }
+  line-height: 1.35;
 }
 @media (max-width: 768px) {
-  .why-choose__heading {
-    font-size: 24px;
-  }
-}
-.why-choose__description {
-  color: var(--secondary);
-  font-size: 18px;
-  line-height: 1.9;
-  margin-bottom: 45px;
-}
-@media (max-width: 1200px) {
-  .why-choose__description {
-    font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  .why-choose__description {
-    font-size: 12px;
+  .why-choose__card-title {
+    font-size: 16px;
   }
 }
 
@@ -1824,6 +1853,168 @@ ul {
 
 /*=================================
    Who Should Enroll Section END HERE
+==================================*/
+/*=================================
+   Steps Section START HERE
+==================================*/
+.steps {
+  background: var(--primary);
+  padding: 80px 0 90px;
+}
+@media (max-width: 992px) {
+  .steps {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 768px) {
+  .steps {
+    padding: 60px 0;
+  }
+}
+.steps__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+@media (max-width: 768px) {
+  .steps__header {
+    margin-bottom: 40px;
+  }
+}
+.steps__title {
+  color: var(--white);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+@media (max-width: 1200px) {
+  .steps__title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 768px) {
+  .steps__title {
+    font-size: 34px;
+  }
+}
+.steps__subtitle {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .steps__subtitle {
+    font-size: 14px;
+  }
+}
+.steps__wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1200px) {
+  .steps__wrapper {
+    flex-wrap: wrap;
+    row-gap: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .steps__wrapper {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+.steps__card {
+  width: 235px;
+  background: #1E294B;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .steps__card {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+.steps__card--active {
+  background: var(--primaryOrange);
+  border-color: var(--primaryOrange);
+}
+.steps__card--active .steps__number {
+  background: var(--white);
+  color: var(--primaryOrange);
+}
+.steps__card--active .steps__card-title,
+.steps__card--active .steps__card-description {
+  color: var(--white);
+}
+.steps__card:first-child {
+  background: var(--white);
+}
+.steps__card:first-child .steps__card-title {
+  color: var(--primary);
+}
+.steps__card:first-child .steps__card-description {
+  color: var(--secondary);
+}
+.steps__number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #F97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 800;
+}
+.steps__card-title {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+.steps__card-description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.steps__connector {
+  width: 28px;
+  height: 2px;
+  border-top: 2px dashed var(--primaryOrange);
+  flex-shrink: 0;
+}
+@media (max-width: 1200px) {
+  .steps__connector {
+    display: none;
+  }
+}
+.steps__card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.8);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.steps__card--show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/*=================================
+   Steps Section END HERE
 ==================================*/
 /*=================================
    Our Students are Working With 

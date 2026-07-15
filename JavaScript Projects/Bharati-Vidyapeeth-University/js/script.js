@@ -182,6 +182,65 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/*==== Show Why Choose Cards =====*/
+const whyChooseCards = document.querySelector("#whyChooseCards");
+
+whyChooseData.forEach((item) => {
+
+    whyChooseCards.innerHTML += `
+        <article class="why-choose__card">
+            <span class="why-choose__number"> ${item.number} </span>
+            <h3 class="why-choose__card-title"> ${item.title} </h3>
+        </article>
+    `;
+});
+
+
+/*==== Show Steps Cards =====*/
+const stepsWrapper = document.querySelector("#stepsWrapper");
+
+stepsData.forEach((step, index) => {
+    stepsWrapper.innerHTML += `
+        <article class="steps__card ${step.active ? "steps__card--active" : ""}">
+            <span class="steps__number">
+                ${step.number}
+            </span>
+
+            <h3 class="steps__card-title">
+                ${step.title}
+            </h3>
+
+            <p class="steps__card-description">
+                ${step.description}
+            </p>
+        </article>
+        ${index !== stepsData.length - 1 ? '<span class="steps__connector"></span>' : ''}
+    `;
+});
+
+
+/*===== Steps Card Animation =====*/
+const stepsSection = document.querySelector(".steps");
+const stepCards = document.querySelectorAll(".steps__card");
+
+if (stepsSection) {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            stepCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add("steps__card--show");
+                }, index * 200);
+            });
+            observer.unobserve(stepsSection);
+        });
+    }, {
+        threshold: .35
+    });
+    observer.observe(stepsSection);
+}
+
+
 /*==== Show FAQ Data ======*/
 const faqList = document.querySelector("#faqList");
 
@@ -241,16 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/*==== Show Footer Data ======*/
-const footerLinks = document.querySelector("#footerLinks");
-
-footerData.forEach((item, index) => {
-    footerLinks.innerHTML += `<a href="${item.link}"> ${item.text} </a>`;
-});
-
-
 /*==== Stats Counter Animation ====*/
-
 const counters = document.querySelectorAll(".stats__title");
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -290,4 +340,12 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 counters.forEach((counter) => {
     observer.observe(counter);
+});
+
+
+/*==== Show Footer Data ======*/
+const footerLinks = document.querySelector("#footerLinks");
+
+footerData.forEach((item, index) => {
+    footerLinks.innerHTML += `<a href="${item.link}"> ${item.text} </a>`;
 });
