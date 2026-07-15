@@ -1918,12 +1918,14 @@ ul {
 @media (max-width: 1200px) {
   .steps__wrapper {
     flex-wrap: wrap;
+    align-items: center;
     row-gap: 26px;
   }
 }
 @media (max-width: 768px) {
   .steps__wrapper {
     flex-direction: column;
+    align-items: center;
     gap: 18px;
   }
 }

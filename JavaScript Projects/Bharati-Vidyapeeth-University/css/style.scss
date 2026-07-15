@@ -2059,11 +2059,13 @@ ul {
 
         @media (max-width:1200px) {
             flex-wrap: wrap;
+            align-items: center;
             row-gap: 26px;
         }
 
         @media (max-width:768px) {
             flex-direction: column;
+            align-items: center;
             gap: 18px;
         }
     }
