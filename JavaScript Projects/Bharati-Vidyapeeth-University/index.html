@@ -309,7 +309,7 @@
 
             <!-- Semester Tabs -->
             <div class="journey__tabs">
-                <button class="journey__tab journey__tab--active">
+                <button class="journey__tab journey__tab--active" data-index="0">
                     <span class="journey__tab-title">
                         1st Semester
                     </span>
@@ -319,7 +319,7 @@
                     </span>
                 </button>
 
-                <button class="journey__tab">
+                <button class="journey__tab" data-index="1">
                     <span class="journey__tab-title">
                         2nd Semester
                     </span>
@@ -329,7 +329,7 @@
                     </span>
                 </button>
 
-                <button class="journey__tab">
+                <button class="journey__tab" data-index="2">
                     <span class="journey__tab-title">
                         3rd Semester
                     </span>
@@ -339,7 +339,7 @@
                     </span>
                 </button>
 
-                <button class="journey__tab">
+                <button class="journey__tab" data-index="3">
                     <span class="journey__tab-title">
                         4th Semester
                     </span>
@@ -360,47 +360,7 @@
                         <span>Credits</span>
                     </div>
 
-                    <div class="journey__subjects-body">
-                        <div class="journey__subject">
-                            <span>
-                                Management Concepts &amp; Applications
-                            </span>
-
-                            <span class="journey__credit">
-                                3
-                            </span>
-                        </div>
-
-                        <div class="journey__subject">
-                            <span>
-                                Managerial Economics
-                            </span>
-
-                            <span class="journey__credit">
-                                3
-                            </span>
-                        </div>
-
-                        <div class="journey__subject">
-                            <span>
-                                Financial &amp; Management Accounting
-                            </span>
-
-                            <span class="journey__credit">
-                                4
-                            </span>
-                        </div>
-
-                        <div class="journey__subject">
-                            <span>
-                                Organizational Behaviour
-                            </span>
-
-                            <span class="journey__credit">
-                                3
-                            </span>
-                        </div>
-                    </div>
+                    <div class="journey__subjects-body" id="subjectsBody"> </div>
                 </div>
 
                 <!-- Right Card -->
@@ -409,31 +369,9 @@
                         Open Elective Options
                     </h3>
 
-                    <p class="journey__card-subtitle">
-                        Semester 1 choices:
-                    </p>
+                    <p class="journey__card-subtitle" id="semesterTitle"> </p>
 
-                    <ul class="journey__elective-list">
-                        <li class="journey__elective-item">
-                            Agriculture Business Management
-                        </li>
-
-                        <li class="journey__elective-item">
-                            Community Work – I
-                        </li>
-
-                        <li class="journey__elective-item">
-                            Current Affairs
-                        </li>
-
-                        <li class="journey__elective-item">
-                            Universal Human Values
-                        </li>
-
-                        <li class="journey__elective-item">
-                            Counseling Psychology
-                        </li>
-                    </ul>
+                    <ul class="journey__elective-list" id="electiveList"> </ul>
                 </aside>
             </div>
 

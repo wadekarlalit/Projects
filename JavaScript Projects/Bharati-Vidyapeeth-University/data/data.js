@@ -70,6 +70,138 @@ const whyChooseData = [
 ];
 
 
+//=========== journeyData Data Here =============
+const journeyData = [
+  {
+    semester: "1st Semester",
+    credits: 31,
+
+    subjects: [
+      {
+        name: "Management Concepts & Applications",
+        credit: 3
+      },
+      {
+        name: "Managerial Economics",
+        credit: 3
+      },
+      {
+        name: "Financial & Management Accounting",
+        credit: 4
+      },
+      {
+        name: "Organizational Behaviour",
+        credit: 3
+      }
+    ],
+
+    electives: [
+      "Agriculture Business Management",
+      "Community Work – I",
+      "Current Affairs",
+      "Universal Human Values",
+      "Counseling Psychology"
+    ]
+  },
+
+  {
+    semester: "2nd Semester",
+    credits: 35,
+
+    subjects: [
+      {
+        name: "Marketing Management",
+        credit: 4
+      },
+      {
+        name: "Human Resource Management",
+        credit: 3
+      },
+      {
+        name: "Operations Management",
+        credit: 4
+      },
+      {
+        name: "Business Communication",
+        credit: 3
+      }
+    ],
+
+    electives: [
+      "Business Ethics",
+      "Environmental Studies",
+      "Entrepreneurship",
+      "Digital Skills",
+      "Leadership Development"
+    ]
+  },
+
+  {
+    semester: "3rd Semester",
+    credits: 39,
+
+    subjects: [
+      {
+        name: "Strategic Management",
+        credit: 4
+      },
+      {
+        name: "Business Analytics",
+        credit: 4
+      },
+      {
+        name: "International Business",
+        credit: 3
+      },
+      {
+        name: "Research Methodology",
+        credit: 3
+      }
+    ],
+
+    electives: [
+      "Artificial Intelligence",
+      "Data Science",
+      "Cloud Computing",
+      "Cyber Security",
+      "Machine Learning"
+    ]
+  },
+
+  {
+    semester: "4th Semester",
+    credits: 19,
+
+    subjects: [
+      {
+        name: "Project Work",
+        credit: 8
+      },
+      {
+        name: "Internship",
+        credit: 6
+      },
+      {
+        name: "Seminar",
+        credit: 2
+      },
+      {
+        name: "Viva",
+        credit: 3
+      }
+    ],
+
+    electives: [
+      "Capstone Project",
+      "Innovation Lab",
+      "Advanced Analytics",
+      "Global Business",
+      "Professional Development"
+    ]
+  }
+];
+
+
 //=========== FAQ Data Here =============
 const faqData = [
     {
