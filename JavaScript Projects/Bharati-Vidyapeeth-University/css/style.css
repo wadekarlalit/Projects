@@ -1941,6 +1941,12 @@ ul {
   flex-shrink: 0;
   text-align: center;
 }
+@media (max-width: 1400px) {
+  .steps__card {
+    width: min(180px, 100%);
+    padding: 15px 10px;
+  }
+}
 @media (max-width: 768px) {
   .steps__card {
     width: 100%;
@@ -1980,19 +1986,38 @@ ul {
   font-size: 24px;
   font-weight: 800;
 }
+@media (max-width: 1400px) {
+  .steps__number {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
 .steps__card-title {
   color: var(--white);
+  font-size: 16px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.35;
   margin-top: 28px;
   margin-bottom: 10px;
 }
+@media (max-width: 1400px) {
+  .steps__card-title {
+    font-size: 14px;
+  }
+}
 .steps__card-description {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+}
+@media (max-width: 1400px) {
+  .steps__card-description {
+    font-size: 10px;
+  }
 }
 .steps__connector {
   width: 28px;

@@ -196,6 +196,53 @@ whyChooseData.forEach((item) => {
 });
 
 
+/*==== Show Journey Data Here =====*/
+const tabs = document.querySelectorAll(".journey__tab");
+const subjectsBody = document.getElementById("subjectsBody");
+const electiveList = document.getElementById("electiveList");
+const semesterTitle = document.getElementById("semesterTitle");
+
+function renderSemester(index) {
+    const data = journeyData[index];
+
+    subjectsBody.innerHTML = "";
+
+    data.subjects.forEach(subject => {
+        subjectsBody.innerHTML += `
+            <div class="journey__subject">
+                <span>${subject.name}</span>
+                <span class="journey__credit">
+                    ${subject.credit}
+                </span>
+            </div>
+        `;
+    });
+
+    semesterTitle.textContent = `${data.semester} choices:`;
+    electiveList.innerHTML = "";
+
+    data.electives.forEach(item => {
+        electiveList.innerHTML += `
+            <li class="journey__elective-item">
+                ${item}
+            </li>
+        `;
+    });
+}
+
+tabs.forEach((tab, index) => {
+
+    tab.addEventListener("click", () => {
+        tabs.forEach(btn => btn.classList.remove("journey__tab--active"));
+        tab.classList.add("journey__tab--active");
+        renderSemester(index);
+    });
+
+});
+renderSemester(0);
+
+
+
 /*==== Show Steps Cards =====*/
 const stepsWrapper = document.querySelector("#stepsWrapper");
 
